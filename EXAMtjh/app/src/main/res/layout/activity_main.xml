@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="30dp">
+
+    <!-- 头像图片：自己照片放到drawable-xxhdpi，名字head.png -->
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/small_icon"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- 姓名输入框 -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本号：v1.0.0"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
